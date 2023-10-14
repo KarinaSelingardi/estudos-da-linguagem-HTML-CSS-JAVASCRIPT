@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Incorporando Javascript em Páginas HTML</title>
+</head>
+<body>
+    <div id="exibe_resultado">Resultado da Multiplicação</div>
+    <div id="exibe_resultado_1">Resultado da Soma</div>
+    <div id="exibe_resultado_2">Resultado da Subtração</div>
+    <div id="exibe_resultado_3">Resultado da Divisão</div>
+
+    <script type="text/javascript">
+        // Função de multiplicação
+        function multiplique(numero1, numero2) {
+            return numero1 * numero2;
+        }
+
+        // Função de soma
+        function some(numero2, numero3) {
+            return numero2 + numero3;
+        }
+
+        // Função de subtração
+        function subtraia(numero5, numero4) {
+            return numero5 - numero4;
+        }
+
+        // Função de divisão
+        function divida(numero6, numero7) {
+            return numero6 / numero7;
+        }
+
+        // Realizar a multiplicação
+        var resultadoMultiplicacao = multiplique(10, 50);
+        var divLocalMultiplicacao = document.getElementById('exibe_resultado');
+        divLocalMultiplicacao.innerHTML = 'Resultado da Multiplicação: ' + resultadoMultiplicacao;
+
+        // Realizar a soma
+        var resultadoSoma = some(10, 50);
+        var divLocalSoma = document.getElementById('exibe_resultado_1');
+        divLocalSoma.innerHTML = 'Resultado da Soma: ' + resultadoSoma;
+
+        // Realizar a subtração
+        var resultadoSubtracao = subtraia(10, 90);
+        var divLocalSubtracao = document.getElementById('exibe_resultado_2');
+        divLocalSubtracao.innerHTML = 'Resultado da Subtração: ' + resultadoSubtracao;
+
+        // Realizar a divisão
+        var resultadoDivisao = divida(50, 2);
+        var divLocalDivisao = document.getElementById('exibe_resultado_3');
+        divLocalDivisao.innerHTML = 'Resultado da Divisão: ' + resultadoDivisao;
+    </script>
+</body>
+</html>
