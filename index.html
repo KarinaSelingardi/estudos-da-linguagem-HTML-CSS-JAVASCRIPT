@@ -1,40 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <body>
-         <h1> Recipe website name</h1>
-         <hr>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<title>Praticando Javascript - Exercício 1</title>
+</head>
+<body>
+       
+</body>
+     
+	<script type="text/javascript">
+    
+		var numero1 = prompt("Insira o primeiro número: ");
+		var numero2 = prompt("Insira o segundo número: ");
+    
+		var resultadoDivisao = divida(numero1, numero2); 
 
-            <h2> Welcome to [website's name]</h2>
-            <p> This is my first website<em> first website!</em></p>
+		alert('O resultado da divisão é igual a: ' + resultadoDivisao); 
 
-            <h3> easy foods for everyone</h3>
-            <p> Let me tell you how I ...</p>
+		function divida(numero1, numero2){
 
-            <hr>
-            <h2>Recipes Types</h2>
-            <p> choose<abbr title="California" >CA</abbr>the category</p>
-            <p> Ive heard good things about here:</p>
-            <address>
-                Campinas Brazil<br>
-                São Paulo Brasil <br>
-
-            </address>
-            <!---comment type-->
-
-
-
-            <h3> Breakfast recipes</h3>
-             <p> cake recipe<strong> very good</strong>
-                <br> &nbsp;&nbsp;&nbsp;... flour
-                <br> &nbsp;&nbsp;&nbsp;...milk
-                <br>&nbsp;&nbsp;&nbsp;... butter<abbr title = "Mozilla developer network">MDN</abbr>
-            </p>
-             
-            
-            <hr>
-             
-             &lt;&lt;&lt; &copy; Karina &gt;&gt;&gt;
-        </body>
-    </head>
+			var resultado = 0; 
+      
+			resultado = numero1 / numero2;
+ 
+			return resultado;
+ 
+		}
+	</script>
 </html>
